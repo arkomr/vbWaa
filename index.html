@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+html,body{
+            width:100%;
+            height:100vh;
+            overflow:hidden;
+            margin:0px;
+            padding:0px;
+            border:none;
+        }
+        iframe{
+            width:100%;
+            height:100vh;
+            overflow:hidden;
+            margin:0px;
+            padding:0px;
+            border:none;
+        }
+    
+</style>
+      <script>
+         window.onload = function() {
+            var iframe = document.getElementById("myiframe");
+            iframe.width = iframe.contentWindow.document.body.scrollWidth;
+            iframe.height = iframe.contentWindow.document.body.scrollHeight;
+         }
+      </script>
+   </head>
+<body>
+<iframe id="myiframe" src="https://poc-b.kd3.dev/" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true" height="100%" width="100%"></iframe>
+</body>
+</html>
